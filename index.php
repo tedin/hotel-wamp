@@ -30,7 +30,7 @@ $password = "";
         $password = test_input($_POST["passLogin"]);
 }
 // Zamijeniti sa nasom bazom
-/*$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password);
 
 // Provjera konekcije
 if ($conn->connect_error) {
@@ -42,7 +42,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0)
 {
 
-}*/
+}
 ?>
 
 
