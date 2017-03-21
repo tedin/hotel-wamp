@@ -1,83 +1,64 @@
 body {
-  height: 100%;
-  padding: 0 !important;
-  margin: 0 !important;
-  font-family: Lato;
+  font-family: Arial;
+  background-image: url("../images/body-background.jpg");
+  background-size: cover;
+  padding: 0;
 }
 
-::-webkit-scrollbar {
-  display: none;
+#logo-navbar {
+  height: 100px;
 }
 
 .navbar {
-  margin-bottom: 0;
-  border-radius: 0;
-  border: 1px solid rgb(90, 45, 12);
+  border-bottom: 3px solid rgba(255,215,0,0.6);
+  position: relative;
+  background-color: rgba(255,255,255, 0.9);
+  margin: 0;
 }
 
-/* Add a gray background color and some padding to the footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
+#navigacija-desno {
+  position: absolute !important;
+  bottom: 0;
+  right: 35px;
+  vertical-align: bottom;
+  padding: 0 25px;
 }
 
-nav{
-  opacity: 0.9;
-  background-image: url('../images/nav-background.jpg');
-  background-size: cover;
-}
-
-.dugme-black {
-  opacity: 0.9;
-  border-radius: 0;
-  border: 3px solid;
-  border-color: rgba(0, 0, 0, 0.9);
+.nav-link {
+  padding: 0 3px;
   background-color: transparent;
-  color: black;
+  cursor: pointer;
 }
 
-.dugme {
-  opacity: 0.9;
-  border-radius: 0;
-  border: 3px solid;
-  border-color: rgba(255, 255, 255, 0.9);
-  margin-top: 5px;
-  margin-right: 5px;
-  background-color: transparent;
-  color: white;
+.nav-link a {
+  padding: 10px 20px !important;
+  font-weight: bold;
+  color: rgba(22,111,175,1.0) !important;
 }
 
-.dugme:hover {
-  color: white;
-}
-
-.dugme:focus {
-  color: white;
-}
-
-#login-dugme:hover {
-  background-color: rgba(0, 158, 96, 0.9);
-}
-
-nav ul li a {
-  opacity: 0.9;
-  color: white !important;
-}
-
-nav ul li a:hover {
-  opacity: 0.75;
-  background-color: rgba(0, 158, 96, 0.9) !important;
+.nav-link:hover {
+    text-decoration-color: black;
+    padding: 0;
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image:
+      -webkit-gradient(linear, 0 100%, 0 0, from(gold), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image:
+      -webkit-linear-gradient(bottom, gold, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, gold, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image:
+      -o-linear-gradient(bottom, gold, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to top, gold, rgba(0, 0, 0, 0)) 1 100%;
+    border-top: 0;
+    border-bottom: 0;
 }
 
 .text-justify {
   text-align: justify;
 }
 
-#logo-navbar {
-  height: 50px;
-  margin-left: -10px;
-  margin-right: 10px;
-}
 
 body.modal-open .container-fluid{
   -webkit-filter: blur(2px);
@@ -125,41 +106,178 @@ body.modal-open .container-fluid{
 }
 
 .modal-backdrop {
-  background-color: rgba(0, 77, 46, 1);
+  background-color: rgba(189,152,0,0.4);
 }
 
-#log-out-link {
-  padding: 6px 10px;
- /* margin: 7px 5px;*/
+.naslov {
+
+    opacity: 0.9;
+    margin: 200px auto;
+    font-size: 100px;
 }
 
-li.active a{
-  background-color: rgba(0, 158, 96, 0.8) !important;
+#image-jumbo {
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),url("../images/hotel-jumbo.jpg");
+    background-size: cover;
 }
 
-#navigacija-desno li p{
-  color: white;
-  margin: 14px;
-  font-size: 15px;
+.clanak {
+    padding: 20px;
+    color: white;
+    line-height: 25px;
 }
 
-::-webkit-scrollbar {
-  display: none;
+.slika-wrapper {
+    overflow:auto;
+    padding: 0 !important;
+    background-image: url('../images/slika 4.jpg');
+    background-size: cover;
 }
 
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
+#slika-wrapper-1 {
+    background-image: url('../images/slika-1.jpg')
+}
+#slika-wrapper-2 {
+    background-image: url('../images/slika-2.jpg')
+}
+#slika-wrapper-3 {
+    background-image: url('../images/slika-3.jpg')
+}
+#slika-wrapper-4 {
+    background-image: url('../images/slika-4.jpg')
 }
 
-/* Add a gray background color and some padding to the footer */
-footer {
-  background-color: #f2f2f2;
-  padding: 25px;
+
+#unmLogin {
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid white;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    color: white;
 }
 
-nav{
-  opacity: 0.9;
-  background-image: url('../images/nav-background.jpg');
+#passLogin {
+    background-color: rgba(0,0,0,0.5);
+    border: 2px solid white;
+    -webkit-border-radius:10;
+    -moz-border-radius:10;
+    border-radius:10;
+    color: white;
+}
+
+.carousel img {
+  min-width: 100%;
+  height: 500px;
+}
+
+#carousel-wrapper {
+  margin: 20px;
+}
+
+#restoran {
+  background-image: url("../images/restoran.jpg");
+}
+#bazen {
+  background-image: url("../images/bazen.jpg");
+}
+#sauna {
+  background-image: url("../images/sauna.jpg");
+}
+#galerija {
+  background-image: url("../images/galerija.jpg");
+}
+#bar {
+  background-image: url("../images/bar.jpg");
+}
+#sastanci {
+  background-image: url("../images/sastanci.jpg");
+}
+
+.kvadrat {
+  margin: 0.9% 0.80%;
+  display: inline-block;
+  width: 31.5%;
   background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.3);
+}
+
+.kvadrat:hover {
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0, 0.1);
+  cursor: pointer;
+}
+
+.kvadrat-naslov {
+  margin-top: 70%;
+  color: white;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 7px;
+}
+
+.tri-kvadrata {
+  margin: 0 19px;
+}
+
+.dugme {
+  background-color: rgba(0,0,0,0.5) !important;
+  border-color: white  !important;
+  border: 2px solid  !important;
+  color: white  !important;
+  padding: 5px 15px;
+}
+
+
+.sadrzaj {
+  width: 95%;
+
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  background-color: rgba(255,255,255, 0.8);
+  border-top: 1px rgba(255,255,255, 0.8) solid;
+  border-bottom: 1px rgba(255,255,255, 0.8) solid;
+
+}
+
+#footer {
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255,255,255,0.8);;
+  border-top: 3px solid rgba(255,215,0,0.6);
+  color: rgba(22,111,175,1.0) !important;
+}
+
+.sobe-naslov {
+  color: rgba(22,111,175,1.0) !important;
+}
+
+.sprat-soba {
+  border-bottom: 3px solid rgba(0,0,0,0.15);
+  padding: 50px 0;
+}
+
+.dugme-soba-slobodna {
+  background-color: rgba(22,111,175,0.5) !important;
+  border: 3px solid rgba(0,0,100,0.5) !important;
+  border-radius: 8%;
+  color: white  !important;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.dugme-soba-zauzeta {
+  background-color: rgba(175,22,22,0.5) !important;
+  border: 3px solid rgba(100,0,0,0.5) !important;
+  border-radius: 8%;
+  color: white  !important;
+  padding: 10px 25px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#info-modal-body {
+  font-size: 20px;
 }
